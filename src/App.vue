@@ -11,21 +11,16 @@
     >
       <div class="category_label">{{ SiteInfo.Category }}</div>
       <div class="sites_container">
-        <div
+        <a
           v-for="(Site, Site_index) in SiteInfo.Sites"
           v-bind:key="Site_index"
+          v-bind:href="Site.link"
           class="site_container"
         >
           <p class="silte_label">{{ Site.label }}</p>
-          <a class="site_anker" v-bind:href="Site.link">
-            <img
-              class="site_img"
-              v-bind:src="Site.img"
-              v-bind:alt="Site.label"
-            />
-          </a>
+          <img class="site_img" v-bind:src="Site.img" v-bind:alt="Site.label" />
           <p class="site_description">{{ Site.description }}</p>
-        </div>
+        </a>
       </div>
     </div>
     <div id="footer">
@@ -366,6 +361,8 @@ export default {
     flex-direction: row;
     flex-wrap: wrap;
     .site_container {
+      color: #000;
+      text-decoration: none;
       width: 300px;
       padding: 10px;
       margin: 20px;
@@ -385,14 +382,12 @@ export default {
         border-radius: 10px;
         box-shadow: inset 2px 2px 3px #868c98, inset -2px -2px 3px #ffffff;
       }
-      .site_anker {
-        margin: 15px 0;
+      .site_img {
+        width: 220px;
+        border: solid 1px #246cac;
+        margin: 30px 0;
         border-radius: 0 70px;
-        .site_img {
-          width: 250px;
-          border: solid 1px #246cac;
-          border-radius: 0 70px;
-        }
+        box-shadow: 1px 1px 2px #868c98, -1px -1px 2px #ffffff;
       }
       .site_description {
         font-size: 15px;
@@ -403,6 +398,9 @@ export default {
         align-items: center;
         border-radius: 10px;
         box-shadow: inset 3px 3px 5px #868c98, inset -3px -3px 5px #ffffff;
+      }
+      &:hover {
+        box-shadow: 3px 3px 4px #868c98, -3px -3px 4px #ffffff;
       }
     }
   }
