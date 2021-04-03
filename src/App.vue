@@ -268,11 +268,18 @@ export default {
           Category: "Style",
           Sites: [
             {
-              label: "Neumorphism.io",
+              label: "Neumorphism .io",
               link: "https://neumorphism.io/",
               img: require("./images/sites/Neumorphism.png"),
               description:
                 "Neumorphismのデザインを簡単に作成できる。色や凹凸感もGUIで設定してCSSを生成してくれる。",
+            },
+            {
+              label: "Glassmorphism .io",
+              link: "https://glassmorphism.com/",
+              img: require("./images/sites/glassmorphism.png"),
+              description:
+                "Glassmorphismのデザインを簡単に作成できる。ブラーなどもプレビューしながら調整可能",
             },
           ],
         },
