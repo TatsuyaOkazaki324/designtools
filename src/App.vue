@@ -262,6 +262,13 @@ export default {
               description:
                 "Bootstrapが提供するアイコン集。npmでインストールできる。ニッチなアイコンが多くてSVGでダウンロードができる。",
             },
+            {
+              label: "Facebook Design",
+              link: "https://design.facebook.com/",
+              img: require("./images/sites/facebookdesign.png"),
+              description:
+                "英語ベースだが、サイトそのもののデザインが優れていることや、モックアップの画像をダウンロードできたりなど、汎用性が高い。",
+            },
           ],
         },
         {
