@@ -269,6 +269,13 @@ export default {
               description:
                 "英語ベースだが、サイトそのもののデザインが優れていることや、モックアップの画像をダウンロードできたりなど、汎用性が高い。",
             },
+            {
+              label: "lordicon",
+              link: "https://lordicon.com/icons",
+              img: require("./images/sites/lordicon.png"),
+              description:
+                "動きのあるアイコンを多数用意しているサイト。アイコンのパーツごとの色を指定することも可能。サイトそのものが思いため注意が必要。",
+            },
           ],
         },
         {
